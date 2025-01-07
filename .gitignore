@@ -41,5 +41,8 @@ luac.out
 /.editor_settings
 /.internal
 /build
+/gh-pages
 
 .DS_Store
+manifest.private.der
+manifest.public.der
