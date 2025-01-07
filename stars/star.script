@@ -1,8 +1,9 @@
-local speed = -240
-local score = 5000
+go.property("score", 100)
+go.property("speed", 240)
 
 function update(self, dt)
 	local p = go.get_position()
+	local speed = self.speed * -1
 	p.x = p.x + speed * dt
 	if p.x < -32 then
 		go.delete()
@@ -12,7 +13,8 @@ end
 
 function on_message(self, message_id, message, sender)
 	if message_id == hash("collision_response") then
-		msg.post("main#gui", "add_score", {amount = score})
+		msg.post("main#gui", "add_score", {amount = self.score})
+		particlefx.play("#pickup")
 		go.delete()
 	end
 end
