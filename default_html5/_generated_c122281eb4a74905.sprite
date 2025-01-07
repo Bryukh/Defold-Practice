@@ -1,6 +1,0 @@
-default_animation: "bg"
-material: "/builtins/materials/sprite.material"
-textures {
-  sampler: "texture_sampler"
-  texture: "/assets/background.atlas"
-}

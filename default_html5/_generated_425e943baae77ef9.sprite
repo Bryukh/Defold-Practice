@@ -1,6 +1,0 @@
-default_animation: "bonus_star"
-material: "/builtins/materials/sprite.material"
-textures {
-  sampler: "texture_sampler"
-  texture: "/assets/stars.atlas"
-}
