@@ -1,6 +1,6 @@
 local max_speed = 300
-local min_y = 60
-local max_y = 600
+go.property("min_y", 100)
+go.property("max_y", 600)
 
 function init(self)
 	-- Let the script receive input from the player
@@ -16,10 +16,10 @@ end
 function update(self, dt)
 	local p = go.get_position()
 	p.y = p.y + self.speed * dt
-	if p.y < min_y then
-		p.y = min_y
-	elseif p.y > max_y then
-		p.y = max_y
+	if p.y < self.min_y then
+		p.y = self.min_y
+	elseif p.y > self.max_y then
+		p.y = self.max_y
 	end
 	go.set_position(p)
 	self.speed = 0

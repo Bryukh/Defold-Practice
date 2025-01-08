@@ -1,5 +1,5 @@
 go.property("score", 100)
-go.property("speed", 240)
+go.property("speed", 160)
 
 function update(self, dt)
 	local p = go.get_position()

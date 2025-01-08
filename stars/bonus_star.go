@@ -2,6 +2,11 @@ components {
   id: "bonus_star"
   component: "/stars/bonus_star.script"
   properties {
+    id: "speed"
+    value: "600.0"
+    type: PROPERTY_TYPE_NUMBER
+  }
+  properties {
     id: "score"
     value: "1000.0"
     type: PROPERTY_TYPE_NUMBER

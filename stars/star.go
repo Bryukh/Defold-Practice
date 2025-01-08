@@ -7,7 +7,7 @@ components {
   component: "/stars/star.script"
   properties {
     id: "speed"
-    value: "500.0"
+    value: "400.0"
     type: PROPERTY_TYPE_NUMBER
   }
 }
