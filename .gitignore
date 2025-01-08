@@ -49,4 +49,4 @@ manifest.public.der
 .vscode
 
 # Ignore all .png files in the assets folder
-assets/**/*.png
+assets/premium/**/*.png
