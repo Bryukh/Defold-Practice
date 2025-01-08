@@ -1,5 +1,6 @@
 # Side scroller Defold Demo
 
+[Play the game](https://bryukh.github.io/Defold-Side-Scroller/)
 
 This game is based on the [Side scroller tutorial](https://defold.com/learn/tutorials/side-scroller/).
 I've changed the visuals to fantasy style and added some new features.
