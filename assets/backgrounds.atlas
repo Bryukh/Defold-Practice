@@ -1,0 +1,22 @@
+images {
+  image: "/assets/background/clouds_1.png"
+}
+images {
+  image: "/assets/background/clouds_2.png"
+}
+images {
+  image: "/assets/background/clouds_3.png"
+}
+images {
+  image: "/assets/background/clouds_4.png"
+}
+images {
+  image: "/assets/background/rocks_1.png"
+}
+images {
+  image: "/assets/background/rocks_2.png"
+}
+images {
+  image: "/assets/background/sky.png"
+}
+extrude_borders: 2

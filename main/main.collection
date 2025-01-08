@@ -9,53 +9,8 @@ instances {
   }
 }
 instances {
-  id: "large_planets1"
-  prototype: "/background/large_planets.go"
-  position {
-    y: -20.0
-    z: 0.2
-  }
-}
-instances {
-  id: "large_planets2"
-  prototype: "/background/large_planets.go"
-  position {
-    x: 2560.0
-    y: 100.0
-    z: 0.2
-  }
-}
-instances {
   id: "main"
   prototype: "/main/main.go"
-}
-instances {
-  id: "small_planets1"
-  prototype: "/background/small_planets.go"
-  position {
-    x: 370.184
-    y: 277.594
-    z: 0.1
-  }
-  scale3 {
-    x: 0.3
-    y: 0.3
-    z: 0.3
-  }
-}
-instances {
-  id: "small_planets2"
-  prototype: "/background/small_planets.go"
-  position {
-    x: 1454.288
-    y: -30.269
-    z: 0.1
-  }
-  scale3 {
-    x: 0.3
-    y: 0.3
-    z: 0.3
-  }
 }
 instances {
   id: "spaceship"
@@ -63,20 +18,246 @@ instances {
   position {
     x: 209.66061
     y: 400.0
-    z: 0.5
+    z: 1.0
+  }
+}
+instances {
+  id: "rock_2_0"
+  prototype: "/background/rock_2.go"
+  position {
+    x: 640.0
+    y: 270.0
+    z: -0.1
+  }
+}
+instances {
+  id: "rock_2_1"
+  prototype: "/background/rock_2.go"
+  position {
+    x: 1920.0
+    y: 270.0
+    z: -0.1
+  }
+}
+instances {
+  id: "rock_1_0"
+  prototype: "/background/rock_1.go"
+  position {
+    x: 640.0
+    y: 240.0
+    z: -0.2
+  }
+  component_properties {
+    id: "script"
+    properties {
+      id: "speed"
+      value: "105.0"
+      type: PROPERTY_TYPE_NUMBER
+    }
+  }
+}
+instances {
+  id: "rock_1_1"
+  prototype: "/background/rock_1.go"
+  position {
+    x: 1920.0
+    y: 240.0
+    z: -0.2
+  }
+  component_properties {
+    id: "script"
+    properties {
+      id: "speed"
+      value: "105.0"
+      type: PROPERTY_TYPE_NUMBER
+    }
+  }
+}
+instances {
+  id: "cloud_1_0"
+  prototype: "/background/cloud_1.go"
+  position {
+    x: 640.0
+    y: 614.0
+    z: -0.4
+  }
+  component_properties {
+    id: "script"
+    properties {
+      id: "speed"
+      value: "50.0"
+      type: PROPERTY_TYPE_NUMBER
+    }
+  }
+}
+instances {
+  id: "cloud_1_1"
+  prototype: "/background/cloud_1.go"
+  position {
+    x: 1920.0
+    y: 614.0
+    z: -0.4
+  }
+  component_properties {
+    id: "script"
+    properties {
+      id: "speed"
+      value: "50.0"
+      type: PROPERTY_TYPE_NUMBER
+    }
+  }
+}
+instances {
+  id: "cloud_2_0"
+  prototype: "/background/cloud_2.go"
+  position {
+    x: 640.0
+    y: 507.0
+    z: -0.3
+  }
+  component_properties {
+    id: "script"
+    properties {
+      id: "speed"
+      value: "65.0"
+      type: PROPERTY_TYPE_NUMBER
+    }
+  }
+}
+instances {
+  id: "cloud_2_1"
+  prototype: "/background/cloud_2.go"
+  position {
+    x: 1920.0
+    y: 507.0
+    z: -0.3
+  }
+  component_properties {
+    id: "script"
+    properties {
+      id: "speed"
+      value: "65.0"
+      type: PROPERTY_TYPE_NUMBER
+    }
+  }
+}
+instances {
+  id: "cloud_single_1_0"
+  prototype: "/background/cloud_single_1.go"
+  position {
+    x: 283.0
+    y: 298.0
+    z: -0.05
+  }
+  component_properties {
+    id: "move_left_script"
+    properties {
+      id: "speed"
+      value: "140.0"
+      type: PROPERTY_TYPE_NUMBER
+    }
+  }
+}
+instances {
+  id: "cloud_single_1_1"
+  prototype: "/background/cloud_single_1.go"
+  position {
+    x: 951.0
+    y: 374.0
+    z: -0.05
+  }
+  component_properties {
+    id: "move_left_script"
+    properties {
+      id: "speed"
+      value: "140.0"
+      type: PROPERTY_TYPE_NUMBER
+    }
+  }
+}
+instances {
+  id: "cloud_single_1_2"
+  prototype: "/background/cloud_single_1.go"
+  position {
+    x: 1767.0
+    y: 239.0
+    z: -0.05
+  }
+  component_properties {
+    id: "move_left_script"
+    properties {
+      id: "speed"
+      value: "140.0"
+      type: PROPERTY_TYPE_NUMBER
+    }
+  }
+}
+instances {
+  id: "cloud_single_1_3"
+  prototype: "/background/cloud_single_1.go"
+  position {
+    x: 2231.0
+    y: 365.0
+    z: -0.05
+  }
+  component_properties {
+    id: "move_left_script"
+    properties {
+      id: "speed"
+      value: "140.0"
+      type: PROPERTY_TYPE_NUMBER
+    }
+  }
+}
+instances {
+  id: "cloud_single_2_0"
+  prototype: "/background/cloud_single_2.go"
+  position {
+    x: 669.0
+    y: 357.0
+    z: -0.15
+  }
+  component_properties {
+    id: "script"
+    properties {
+      id: "speed"
+      value: "125.0"
+      type: PROPERTY_TYPE_NUMBER
+    }
+  }
+}
+instances {
+  id: "cloud_single_2_1"
+  prototype: "/background/cloud_single_2.go"
+  position {
+    x: 2023.0
+    y: 315.0
+    z: -0.15
+  }
+  component_properties {
+    id: "script"
+    properties {
+      id: "speed"
+      value: "125.0"
+      type: PROPERTY_TYPE_NUMBER
+    }
   }
 }
 scale_along_z: 0
 embedded_instances {
-  id: "background"
+  id: "sky"
   data: "embedded_components {\n"
   "  id: \"sprite\"\n"
   "  type: \"sprite\"\n"
-  "  data: \"default_animation: \\\"bg\\\"\\n"
+  "  data: \"default_animation: \\\"sky\\\"\\n"
   "material: \\\"/builtins/materials/sprite.material\\\"\\n"
+  "size {\\n"
+  "  x: 1280.0\\n"
+  "  y: 720.0\\n"
+  "}\\n"
   "textures {\\n"
   "  sampler: \\\"texture_sampler\\\"\\n"
-  "  texture: \\\"/assets/background.atlas\\\"\\n"
+  "  texture: \\\"/assets/backgrounds.atlas\\\"\\n"
   "}\\n"
   "\"\n"
   "}\n"
@@ -84,5 +265,6 @@ embedded_instances {
   position {
     x: 640.0
     y: 360.0
+    z: -0.9
   }
 }

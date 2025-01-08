@@ -1,0 +1,14 @@
+go.property("speed", 120)
+
+local SCREEN_X = 1280
+local HALF = SCREEN_X / 2
+
+function update(self, dt)
+	local p = go.get_position()
+	-- apply the speed
+	p.x = p.x - self.speed * dt
+	if p.x <= -HALF then
+		p.x = p.x + 2 * SCREEN_X
+	end
+	go.set_position(p)
+end
