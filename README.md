@@ -12,4 +12,15 @@ TODO add link to the game
 
 Happy Defolding!
 
+## Credits:
+
+- [Defold Side scroller tutorial](https://defold.com/tutorials/side-scroller/)
+
 ----
+
+* Assets (paid)
+  - [Dragon](https://www.gamedevmarket.net/asset/dragon-2) [License](https://www.gamedevmarket.net/about/licences)
+  - [Backgrounds](https://craftpix.net/freebies/free-horizontal-2d-game-backgrounds/) [License](https://craftpix.net/file-licenses/)
+
+----
+
