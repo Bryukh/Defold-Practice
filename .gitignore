@@ -47,3 +47,9 @@ luac.out
 manifest.private.der
 manifest.public.der
 .vscode
+
+# Ignore all .png files in the assets folder
+assets/**/*.png
+
+# Allow other files in the assets folder
+!assets/**
