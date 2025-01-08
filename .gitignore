@@ -50,6 +50,3 @@ manifest.public.der
 
 # Ignore all .png files in the assets folder
 assets/**/*.png
-
-# Allow other files in the assets folder
-!assets/**
