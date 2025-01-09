@@ -1,34 +1,34 @@
 animations {
   id: "fly"
   images {
-    image: "/assets/dragon/__dragon_02_red_flying_001.png"
+    image: "/assets/premium/dragon/__dragon_02_red_flying_001.png"
   }
   images {
-    image: "/assets/dragon/__dragon_02_red_flying_002.png"
+    image: "/assets/premium/dragon/__dragon_02_red_flying_002.png"
   }
   images {
-    image: "/assets/dragon/__dragon_02_red_flying_003.png"
+    image: "/assets/premium/dragon/__dragon_02_red_flying_003.png"
   }
   images {
-    image: "/assets/dragon/__dragon_02_red_flying_004.png"
+    image: "/assets/premium/dragon/__dragon_02_red_flying_004.png"
   }
   images {
-    image: "/assets/dragon/__dragon_02_red_flying_005.png"
+    image: "/assets/premium/dragon/__dragon_02_red_flying_005.png"
   }
   images {
-    image: "/assets/dragon/__dragon_02_red_flying_006.png"
+    image: "/assets/premium/dragon/__dragon_02_red_flying_006.png"
   }
   images {
-    image: "/assets/dragon/__dragon_02_red_flying_007.png"
+    image: "/assets/premium/dragon/__dragon_02_red_flying_007.png"
   }
   images {
-    image: "/assets/dragon/__dragon_02_red_flying_008.png"
+    image: "/assets/premium/dragon/__dragon_02_red_flying_008.png"
   }
   images {
-    image: "/assets/dragon/__dragon_02_red_flying_009.png"
+    image: "/assets/premium/dragon/__dragon_02_red_flying_009.png"
   }
   images {
-    image: "/assets/dragon/__dragon_02_red_flying_000.png"
+    image: "/assets/premium/dragon/__dragon_02_red_flying_000.png"
   }
   playback: PLAYBACK_LOOP_FORWARD
   fps: 6

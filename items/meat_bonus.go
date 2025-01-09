@@ -1,29 +1,34 @@
 components {
-  id: "bonus_star"
-  component: "/stars/bonus_star.script"
+  id: "pickup"
+  component: "/items/pickup.particlefx"
+}
+components {
+  id: "item"
+  component: "/items/item.script"
+  properties {
+    id: "score"
+    value: "500.0"
+    type: PROPERTY_TYPE_NUMBER
+  }
   properties {
     id: "speed"
     value: "600.0"
     type: PROPERTY_TYPE_NUMBER
   }
-  properties {
-    id: "score"
-    value: "1000.0"
-    type: PROPERTY_TYPE_NUMBER
-  }
-}
-components {
-  id: "pickup"
-  component: "/stars/pickup.particlefx"
 }
 embedded_components {
   id: "sprite"
   type: "sprite"
-  data: "default_animation: \"bonus_star\"\n"
+  data: "default_animation: \"meat_2\"\n"
   "material: \"/builtins/materials/sprite.material\"\n"
+  "size {\n"
+  "  x: 128.0\n"
+  "  y: 128.0\n"
+  "}\n"
+  "size_mode: SIZE_MODE_MANUAL\n"
   "textures {\n"
   "  sampler: \"texture_sampler\"\n"
-  "  texture: \"/assets/stars.atlas\"\n"
+  "  texture: \"/assets/food.atlas\"\n"
   "}\n"
   ""
 }
@@ -40,14 +45,13 @@ embedded_components {
   "  shapes {\n"
   "    shape_type: TYPE_SPHERE\n"
   "    position {\n"
-  "      y: -2.5\n"
   "    }\n"
   "    rotation {\n"
   "    }\n"
   "    index: 0\n"
   "    count: 1\n"
   "  }\n"
-  "  data: 31.0\n"
+  "  data: 32.0\n"
   "}\n"
   ""
 }

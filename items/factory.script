@@ -17,7 +17,7 @@ function update(self, dt)
 		self.timer = self.interval
 		local p = go.get_position()
 		p.y = vmath.lerp(math.random(), min_y, max_y)
-		local component = "#star_factory"
+		local component = "#meat_factory"
 		if math.random() < self.bonus_probability then
 			component = "#bonus_factory"
 		end

@@ -1,7 +1,7 @@
 name: "parallax"
 instances {
   id: "factory"
-  prototype: "/stars/factory.go"
+  prototype: "/items/factory.go"
   position {
     x: 1312.0
     y: 360.0

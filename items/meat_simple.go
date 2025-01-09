@@ -1,10 +1,10 @@
 components {
   id: "pickup"
-  component: "/stars/pickup.particlefx"
+  component: "/items/pickup.particlefx"
 }
 components {
-  id: "star"
-  component: "/stars/star.script"
+  id: "meat_item"
+  component: "/items/item.script"
   properties {
     id: "speed"
     value: "400.0"
@@ -24,25 +24,29 @@ embedded_components {
   "  shapes {\n"
   "    shape_type: TYPE_SPHERE\n"
   "    position {\n"
-  "      y: -3.5058432\n"
   "    }\n"
   "    rotation {\n"
   "    }\n"
   "    index: 0\n"
   "    count: 1\n"
   "  }\n"
-  "  data: 20.742905\n"
+  "  data: 24.0\n"
   "}\n"
   ""
 }
 embedded_components {
   id: "sprite"
   type: "sprite"
-  data: "default_animation: \"star\"\n"
+  data: "default_animation: \"meat_1\"\n"
   "material: \"/builtins/materials/sprite.material\"\n"
+  "size {\n"
+  "  x: 96.0\n"
+  "  y: 96.0\n"
+  "}\n"
+  "size_mode: SIZE_MODE_MANUAL\n"
   "textures {\n"
   "  sampler: \"texture_sampler\"\n"
-  "  texture: \"/assets/stars.atlas\"\n"
+  "  texture: \"/assets/food.atlas\"\n"
   "}\n"
   ""
   position {

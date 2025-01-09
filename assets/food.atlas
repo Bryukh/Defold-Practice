@@ -1,0 +1,7 @@
+images {
+  image: "/assets/premium/food/meat_1.png"
+}
+images {
+  image: "/assets/premium/food/meat_2.png"
+}
+extrude_borders: 2
