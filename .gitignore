@@ -45,3 +45,5 @@ luac.out
 .DS_Store
 manifest.private.der
 manifest.public.der
+assets
+.vscode
