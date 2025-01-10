@@ -40,7 +40,6 @@ embedded_components {
   "}\n"
   ""
   scale {
-    x: -0.5
-    y: 0.5
+    x: -1.0
   }
 }
