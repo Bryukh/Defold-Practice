@@ -1,25 +1,31 @@
 local min_y = 60
 local max_y = 600
 
-go.property("frequency", 0.5)
+go.property("min_interval", 1.5)
+go.property("max_interval", 2.5)
 go.property("bonus_probability", 0.2)
+go.property("broccoli_probability", 0.1)
+go.property("cabbage_probability", 0.1)
 
 function init(self)
-	self.interval = 1 / self.frequency
-	self.timer = self.interval
-	-- make the game deterministic
-	math.randomseed(0)
+	local interval = math.random(self.min_interval, self.max_interval)
+	self.timer = interval
 end
 
 function update(self, dt)
 	self.timer = self.timer - dt
 	if self.timer <= 0 then
-		self.timer = self.interval
+		local interval = math.random(self.min_interval, self.max_interval)
+		self.timer = interval
 		local p = go.get_position()
 		p.y = vmath.lerp(math.random(), min_y, max_y)
 		local component = "#meat_factory"
 		if math.random() < self.bonus_probability then
 			component = "#bonus_factory"
+		elseif math.random() < self.broccoli_probability then
+			component = "#broccoli_factory"
+		elseif math.random() < self.cabbage_probability then
+			component = "#cabbage_factory"
 		end
 		factory.create(component, p)
 	end

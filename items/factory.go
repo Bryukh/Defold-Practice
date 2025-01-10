@@ -14,3 +14,15 @@ embedded_components {
   data: "prototype: \"/items/meat_bonus.go\"\n"
   ""
 }
+embedded_components {
+  id: "cabbage_factory"
+  type: "factory"
+  data: "prototype: \"/items/cabbage.go\"\n"
+  ""
+}
+embedded_components {
+  id: "broccoli_factory"
+  type: "factory"
+  data: "prototype: \"/items/broccoli.go\"\n"
+  ""
+}

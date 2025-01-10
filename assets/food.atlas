@@ -4,4 +4,10 @@ images {
 images {
   image: "/assets/premium/food/meat_2.png"
 }
+images {
+  image: "/assets/premium/food/broccoli.png"
+}
+images {
+  image: "/assets/premium/food/cabbage.png"
+}
 extrude_borders: 2
