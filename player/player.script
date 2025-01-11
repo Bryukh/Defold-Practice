@@ -1,12 +1,18 @@
-local max_speed = 300
+go.property("max_speed", 300)
 go.property("min_y", 100)
 go.property("max_y", 600)
+go.property("min_x", 100)
+go.property("max_x", 600)
+
+local SQRT_2 = math.sqrt(2)
 
 function init(self)
 	-- Let the script receive input from the player
 	msg.post(".", "acquire_input_focus")
 	-- the current speed of the space ship
 	self.speed = 0
+	self.dir_x = 0
+	self.dir_y = 0
 
 	-- Animate the ship so it's swaying back and forth
 	go.set(".", "euler.z", -5)
@@ -15,7 +21,26 @@ end
 
 function update(self, dt)
 	local p = go.get_position()
-	p.y = p.y + self.speed * dt
+
+	if self.dir_x == 0 and self.dir_y == 0 then
+		self.speed = 0
+		return
+	end
+	self.speed = self.max_speed
+	-- if player is moving in two directions, we need to normalize the speed
+	local dx = self.dir_x * self.max_speed * dt
+	local dy = self.dir_y * self.max_speed * dt
+	if dx ~= 0 and dy ~= 0 then
+		dx = dx / SQRT_2
+		dy = dy / SQRT_2
+	end
+	p.x = p.x + dx
+	p.y = p.y + dy
+	if p.x < self.min_x then
+		p.x = self.min_x
+	elseif p.x > self.max_x then
+		p.x = self.max_x
+	end
 	if p.y < self.min_y then
 		p.y = self.min_y
 	elseif p.y > self.max_y then
@@ -23,12 +48,19 @@ function update(self, dt)
 	end
 	go.set_position(p)
 	self.speed = 0
+	self.dir_x = 0
+	self.dir_y = 0
 end
 
 function on_input(self, action_id, action)
 	if action_id == hash("up") then
-		self.speed = max_speed
+		self.dir_y = 1
 	elseif action_id == hash("down") then
-		self.speed = -max_speed
+		self.dir_y = -1
+	end
+	if action_id == hash("left") then
+		self.dir_x = -1
+	elseif action_id == hash("right") then
+		self.dir_x = 1
 	end
 end

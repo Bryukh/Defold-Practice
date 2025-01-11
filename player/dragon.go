@@ -1,6 +1,16 @@
 components {
   id: "script"
   component: "/player/player.script"
+  properties {
+    id: "max_y"
+    value: "620.0"
+    type: PROPERTY_TYPE_NUMBER
+  }
+  properties {
+    id: "max_x"
+    value: "1080.0"
+    type: PROPERTY_TYPE_NUMBER
+  }
 }
 embedded_components {
   id: "collisionobject"
