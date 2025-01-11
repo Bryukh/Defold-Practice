@@ -1,6 +1,7 @@
 [project]
 title = Side Scroller Tutorial
 developer = Valentin Briukhanov
+version = 1.1
 
 [bootstrap]
 main_collection = /main/main.collectionc
