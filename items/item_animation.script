@@ -1,0 +1,20 @@
+go.property("tint_max", 1.5)
+go.property("rotation_max", 30)
+go.property("tint_duration", 1)
+go.property("rotation_duration", 0.5)
+
+
+local function rotate_back_and_forth(self)
+	go.animate(".", "euler.z", go.PLAYBACK_ONCE_PINGPONG, self.target_angle, go.EASING_LINEAR, self.rotation_duration, 0,
+		function()
+			-- Reverse the angle and repeat the animation
+			self.target_angle = -self.target_angle
+			rotate_back_and_forth(self)
+		end)
+end
+
+function init(self)
+	self.target_angle = self.rotation_max
+	rotate_back_and_forth(self)
+	go.animate("#sprite", "tint.w", go.PLAYBACK_LOOP_PINGPONG, self.tint_max, go.EASING_INOUTSINE, self.tint_duration, 0)
+end

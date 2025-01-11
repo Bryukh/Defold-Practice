@@ -16,6 +16,20 @@ components {
     type: PROPERTY_TYPE_NUMBER
   }
 }
+components {
+  id: "item_animation"
+  component: "/items/item_animation.script"
+  properties {
+    id: "tint_duration"
+    value: "0.7"
+    type: PROPERTY_TYPE_NUMBER
+  }
+  properties {
+    id: "rotation_max"
+    value: "30"
+    type: PROPERTY_TYPE_NUMBER
+  }
+}
 embedded_components {
   id: "collisionobject"
   type: "collisionobject"
