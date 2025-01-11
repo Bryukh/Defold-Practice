@@ -1,12 +1,12 @@
 [project]
-title = Side Scroller Tutorial
-version = 1.1
+title = Dragon Feast
+version = 1.2
 write_log = 0
 minimum_log_level = 1
 compress_archive = 1
 publisher = unnamed
 developer = Valentin Briukhanov
-title_as_file_name = SideScrollerTutorial
+title_as_file_name = DragonFeast
 
 [display]
 width = 1280
