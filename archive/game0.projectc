@@ -5,7 +5,7 @@ write_log = 0
 minimum_log_level = 1
 compress_archive = 1
 publisher = unnamed
-developer = unnamed
+developer = Valentin Briukhanov
 title_as_file_name = SideScrollerTutorial
 
 [display]
