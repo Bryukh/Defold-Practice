@@ -20,6 +20,11 @@ components {
   id: "item_animation"
   component: "/items/item_animation.script"
   properties {
+    id: "rotation_max"
+    value: "20.0"
+    type: PROPERTY_TYPE_NUMBER
+  }
+  properties {
     id: "tint_duration"
     value: "1.0"
     type: PROPERTY_TYPE_NUMBER
@@ -27,11 +32,6 @@ components {
   properties {
     id: "rotation_duration"
     value: "0.5"
-    type: PROPERTY_TYPE_NUMBER
-  }
-  properties {
-    id: "rotation_max"
-    value: "20"
     type: PROPERTY_TYPE_NUMBER
   }
 }
