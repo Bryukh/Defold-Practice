@@ -4,6 +4,10 @@ go.property("max_y", 600)
 go.property("min_x", 100)
 go.property("max_x", 600)
 
+local GAP_X = 30
+local GAP_Y = 30
+
+
 local SQRT_2 = math.sqrt(2)
 
 function init(self)
@@ -62,5 +66,20 @@ function on_input(self, action_id, action)
 		self.dir_x = -1
 	elseif action_id == hash("right") then
 		self.dir_x = 1
+	end
+	if action_id == hash("mouse_left") then
+		local p = go.get_position()
+		local dx = p.x - action.x
+		local dy = p.y - action.y
+		if dx < -GAP_X then
+			self.dir_x = 1
+		elseif dx > GAP_X then
+			self.dir_x = -1
+		end
+		if dy < -GAP_Y then
+			self.dir_y = 1
+		elseif dy > GAP_Y then
+			self.dir_y = -1
+		end
 	end
 end

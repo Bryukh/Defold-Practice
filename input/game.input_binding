@@ -2,7 +2,6 @@ key_trigger {
   input: KEY_UP
   action: "up"
 }
-
 key_trigger {
   input: KEY_W
   action: "up"
@@ -30,6 +29,10 @@ key_trigger {
 key_trigger {
   input: KEY_D
   action: "right"
+}
+mouse_trigger {
+  input: MOUSE_BUTTON_LEFT
+  action: "mouse_left"
 }
 gamepad_trigger {
   input: GAMEPAD_LPAD_UP
