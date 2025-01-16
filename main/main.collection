@@ -243,6 +243,22 @@ instances {
     }
   }
 }
+instances {
+  id: "ground"
+  prototype: "/background/ground.go"
+  position {
+    x: 640.0
+    y: 9.0
+  }
+}
+instances {
+  id: "ground1"
+  prototype: "/background/ground.go"
+  position {
+    x: 1920.0
+    y: 9.0
+  }
+}
 scale_along_z: 0
 embedded_instances {
   id: "sky"

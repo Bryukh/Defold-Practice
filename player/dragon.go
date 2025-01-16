@@ -2,6 +2,11 @@ components {
   id: "script"
   component: "/player/player.script"
   properties {
+    id: "min_y"
+    value: "120.0"
+    type: PROPERTY_TYPE_NUMBER
+  }
+  properties {
     id: "max_y"
     value: "620.0"
     type: PROPERTY_TYPE_NUMBER

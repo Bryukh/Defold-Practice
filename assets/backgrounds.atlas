@@ -19,4 +19,7 @@ images {
 images {
   image: "/assets/premium/background/sky.png"
 }
+images {
+  image: "/assets/premium/background/ground.png"
+}
 extrude_borders: 2
